@@ -1,6 +1,6 @@
 # Ggpt-3-demo
 
-for educational purposes
+For educational purposes
 
 ### `npm start`
 
