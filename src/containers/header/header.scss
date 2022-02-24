@@ -1,0 +1,165 @@
+.header {
+  display: flex;
+  width: 100%;
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5rem;
+    @media screen and (max-width: 76.5rem) {
+      margin-right: 0;
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+      margin: 1rem 0;
+      h1 {
+        font-size: 3.85rem;
+        font-weight: 800;
+        line-height: 4.65rem;
+        letter-spacing: -0.04rem;
+        @media screen and (max-width: 43.75rem) {
+          font-size: 3rem;
+          line-height: 3.75rem;
+        }
+        @media screen and (max-width: 34.37rem) {
+          font-size: 2.2rem;
+          line-height: 2.5rem;
+        }
+      }
+      p {
+        color: var(--color-text);
+        font-size: 1.25rem;
+        font-weight: normal;
+        line-height: 1.7;
+        margin-top: 1rem;
+        @media screen and (max-width: 43.75rem) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        @media screen and (max-width: 34.37rem) {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
+    &--input {
+      display: flex;
+      width: 100%;
+      margin: 1rem 0;
+
+      input {
+        flex: 2;
+        width: 100%;
+        height: 4.5rem;
+        min-height: 3.15rem;
+        background-color: var(--color-footer);
+        padding: 1.5rem 2rem;
+        border-radius: 0.31rem 0 0 0.31rem;
+        color: #fff;
+        line-height: 1.7rem;
+        font-size: 1.25rem;
+        outline: none;
+        @media screen and (max-width: 43.75rem) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          height: 3.5rem;
+        }
+        @media screen and (max-width: 34.37rem) {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+          height: 2.5rem;
+        }
+        &::placeholder {
+          color: #3d6184;
+          font-weight: 400;
+          font-size: 1.25rem;
+          line-height: 1.7rem;
+          @media screen and (max-width: 43.75rem) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+          @media screen and (max-width: 34.37rem) {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+          }
+        }
+      }
+      button {
+        flex: 0.6;
+        width: 100%;
+        padding: 0 1rem;
+        min-height: 3.15rem;
+        background-color: #ff4820;
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.7rem;
+        border-radius: 0 0.31rem 0.31rem 0;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        @media screen and (max-width: 43.75rem) {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        @media screen and (max-width: 34.37rem) {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
+    &--people {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      img {
+        width: 11.37rem;
+        height: 2.37rem;
+      }
+      p {
+        flex: 1;
+        margin-left: 1rem;
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 500;
+
+        @media screen and (max-width: 43.75rem) {
+          margin-left: 0;
+          text-align: center;
+          line-height: 2.35rem;
+        }
+        @media screen and (max-width: 34.37rem) {
+          line-height: 1.5rem;
+        }
+      }
+      @media screen and (max-width: 43.75rem) {
+        flex-direction: column;
+      }
+    }
+  }
+  &__img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 76.5rem) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 43.75rem) {
+  }
+  @media screen and (max-width: 34.37rem) {
+  }
+}

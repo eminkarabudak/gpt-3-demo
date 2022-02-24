@@ -55,16 +55,23 @@ body {
 }
 .section {
   &__padding {
-    padding: 4rem 6rem;
+    padding: 4rem 8.5rem;
+    transition: 0.3s ease padding;
+    @include breakpoint(laptop) {
+      padding: 2rem 4rem;
+    }
+    @include breakpoint(tablet) {
+      padding: 2rem 4rem;
+    }
     @include breakpoint(phablet) {
-      padding: 4rem;
+      padding: 2rem 2rem;
     }
     @include breakpoint(mobileonly) {
-      padding: 4rem 2rem;
+      padding: 2rem;
     }
   }
   &__margin {
-    margin: 4rem 6rem;
+    margin: 4rem 9rem;
     @include breakpoint(phablet) {
       margin: 4rem;
     }
