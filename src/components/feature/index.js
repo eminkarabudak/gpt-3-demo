@@ -1,8 +1,16 @@
 import './feature.scss'
 
-const Feature = () => {
+const Feature = ({ title, text }) => {
   return (
-    <div>Feature</div>
+    <div className='feature'>
+      <div className="feature__title">
+        <div />
+        <h1>{title}</h1>
+      </div>
+      <div className="feature__text">
+        <p>{text}</p>
+      </div>
+    </div>
   )
 }
 

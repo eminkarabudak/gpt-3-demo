@@ -1,0 +1,131 @@
+.whatgpt3 {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  background: var(--color-footer);
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  &__feature {
+    display: flex;
+    .feature {
+      &__text {
+        @media screen and (max-width: 43.75rem) {
+          margin-top: 0.5rem;
+        }
+      }
+      @media screen and (max-width: 43.75rem) {
+        flex-direction: column;
+      }
+    }
+    @media screen and (max-width: 43.75rem) {
+      margin: 1rem 0;
+      min-width: 100%;
+    }
+  }
+
+  &__heading {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+    h1 {
+      font-size: 2.125rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 2.8rem;
+      letter-spacing: 0em;
+      max-width: 510px;
+      @media screen and (max-width: 43.75rem) {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+      }
+      @media screen and (max-width: 34.37rem) {
+        min-width: 100%;
+      }
+    }
+    p {
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.87rem;
+      letter-spacing: 0em;
+      color: var(--color-subtext);
+    }
+    @media screen and (max-width: 76.5rem) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+      p {
+        margin-top: 1rem;
+      }
+    }
+    @media screen and (max-width: 34.37rem) {
+    }
+  }
+
+  &__features {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+    .feature {
+      flex: 1;
+      margin: 1rem;
+      min-width: 13.12rem;
+      display: unset;
+      flex-direction: column;
+      &__text {
+        margin-top: 0.5rem;
+      }
+      @media screen and (max-width: 34.37rem) {
+        min-width: 100%;
+      }
+    }
+    // @media screen and (max-width: 76.5rem) {
+    //   flex-direction: column;
+    //   align-items: flex-start;
+    //   margin-bottom: 0;
+    // }
+  }
+}
