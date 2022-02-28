@@ -92,16 +92,14 @@
       line-height: 1.87rem;
       letter-spacing: 0em;
       color: var(--color-subtext);
+      @media screen and (max-width: 76.5rem) {
+        margin-top: 1rem;
+      }
     }
     @media screen and (max-width: 76.5rem) {
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: 0;
-      p {
-        margin-top: 1rem;
-      }
-    }
-    @media screen and (max-width: 34.37rem) {
     }
   }
 

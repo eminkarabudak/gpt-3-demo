@@ -1,0 +1,120 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-footer);
+  p {
+    font-size: 0.75rem;
+    line-height: 0.87rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  h4 {
+    font-size: 0.87rem;
+    line-height: 1rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      max-width: 51.25rem;
+      font-size: 3.87rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 4.6rem;
+      letter-spacing: -0.04em;
+      text-align: center;
+      margin: 4rem;
+      @media screen and (max-width: 43.75rem) {
+        font-size: 3rem;
+        line-height: 3.75rem;
+        margin: 2rem;
+      }
+      @media screen and (max-width: 34.37rem) {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        margin: 1rem;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    button {
+      padding: 1.3rem;
+      border: solid 1px #fff;
+      font-size: 1.125rem;
+      line-height: 1.31rem;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #fff;
+      background: var(--color-footer);
+      cursor: pointer;
+      @media screen and (max-width: 34.37rem) {
+        font-size: 0.87rem;
+        line-height: 1.25rem;
+      }
+    }
+    @media screen and (max-width: 43.75rem) {
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 34.37rem) {
+      margin: 1rem;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    text-align: left;
+    // // justify-content: space-around;
+    margin: 11.25rem 0 5.18rem;
+    @media screen and (max-width: 43.75rem) {
+      margin: 8.25rem 0 3.18rem;
+    }
+    @media screen and (max-width: 34.37rem) {
+      margin: 4.25rem 0 2.18rem;
+    }
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 5rem;
+    img {
+      width: 7.37rem;
+      margin-bottom: 1.56rem;
+      cursor: pointer;
+    }
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 15.6rem;
+    margin: 1rem;
+    h4 {
+      margin-bottom: 0.65rem;
+    }
+    p {
+      margin-top: 1.75rem;
+    }
+  }
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

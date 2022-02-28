@@ -1,5 +1,6 @@
 @import '../settings/fonts';
 @import './breakpoints';
+@import './variables';
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -8,6 +9,7 @@ html {
 body {
   font-family: $manrope-sans;
   background-color: var(--color-bg);
+  @include scrollbars(0.5em, var(--color-text), var(--color-bg));
 }
 
 .gradient {
